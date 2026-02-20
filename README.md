@@ -8,7 +8,7 @@ The application is built using a Python backend and a responsive web frontend, p
 
 ## Live Demo
 
-https://nutri-chatbot.onrender.com
+https://nutri-chatbot-mxd5.onrender.com
 
 ---
 
@@ -150,3 +150,4 @@ User authentication
 If you found this project useful, please consider giving it a star on GitHub.
 
 ---
+
