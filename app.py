@@ -5,8 +5,15 @@ from datetime import datetime
 app = Flask(__name__)
 
 # Load Excel sheets
-df_food = pd.read_excel("Modified_Nutrition_Data_No_Beverages.xlsx")
-df_bev = pd.read_excel("Beverages_Nutrition_Data.xlsx")
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+food_path = os.path.join(BASE_DIR, "Modified_Nutrition_Data_No_Beverages.xlsx")
+bev_path = os.path.join(BASE_DIR, "Beverages_Nutrition_Data.xlsx")
+
+df_food = pd.read_excel(food_path)
+df_bev = pd.read_excel(bev_path)
 
 # Normalize column names
 for df in [df_food, df_bev]:
